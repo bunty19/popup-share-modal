@@ -7,14 +7,14 @@ const viewBtn = document.querySelector(".view-modal"),
 
 
     close.onclick = ()=>{
-      viewBtn.click();
+      popup.classList.toggle("hide");
     }
 
     setTimeout(
       function(){
         popup.classList.toggle("show");
       }
-      ,10000 /// milliseconds = 10 seconds
+      ,2000 /// milliseconds = 10 seconds
     );
 
     copy.onclick = ()=>{
